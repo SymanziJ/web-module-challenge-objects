@@ -82,7 +82,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-
+console.log(reviews[5].feedback);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -91,7 +91,8 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-
+reviews[reviews.length-1].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
+console.log(reviews);
 
 
 
@@ -103,9 +104,10 @@ Write a function that creates an object with name, rating, feedback, add the new
   3. The function should push the following object to the array: {name: 'Daniela', rating: 5, review: 'Beautiful atmosphere and wonderful vegan options!' }
   4. should return the resulting array
 */
-
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+let reviewingarray = [];
+function addReview(array, name, rating, feedback){
+  array.push({'name': name, 'rating': rating, 'feedback': feedback});
+  return array;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
